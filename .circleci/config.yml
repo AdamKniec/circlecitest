@@ -28,6 +28,9 @@ jobs:
           root: ~/project
           paths:
             - .
+      - run:
+          name: Deploy to Netlify
+          command: netlify deploy --dir=./build -p -m \"$(git log -1 --pretty=%B)\"
 
   deploy: # this can be any name you choose
     docker:
