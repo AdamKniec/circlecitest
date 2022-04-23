@@ -30,6 +30,7 @@ jobs:
       - heroku/deploy-via-git:
           force: true # force push when pushing to the heroku remote, see: https://devcenter.heroku.com/articles/git
 
+<<<<<<< HEAD
 workflows:
   test_my_app:
     jobs:
@@ -40,3 +41,8 @@ workflows:
           filters:
             branches:
               only: main # only deploy when on main
+=======
+# Invoke jobs via workflows
+# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
+
+>>>>>>> a127903ba30668ddb24f760e34ad16777bac4661
