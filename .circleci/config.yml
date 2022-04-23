@@ -40,6 +40,7 @@ workflows:
   test_my_app:
     jobs:
       - test
+      - build
       - deploy:
           requires:
             - build
